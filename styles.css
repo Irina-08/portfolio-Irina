@@ -1,5 +1,20 @@
+
+
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+	font-family: 'Poppins' , san-serif;
+}
+
 .title {
 	font-size: 20px;
+	text-transform: uppercase;
+	line-height: 1.1;
+	letter-spacing: 4.78px;
+	width: 100px;
+	height: 39px;
+	margin-top: 28px;
+	margin-left: 35px;
 }
 
 .links {
@@ -9,6 +24,12 @@
 	width: 400px;
 	padding: 0;
 	list-style: none;	
+	text-transform: uppercase;
+	font-weight: 600;
+	line-height: 2.7;
+	letter-spacing: 2.87px;
+	margin-top: 42px;
+	margin-right: 41px;
 }
 
 .link{
@@ -23,15 +44,36 @@
 
 .subtitle{
 	font-size: 20px;
+	text-transform: uppercase;
+	line-height: 0.9;
+	letter-spacing: 2px;
+	font-weight: 600;
+	
+}
+
+.subtitle1{
+    margin-top: 176px;
+    margin-left: 34px;
 }
 
 .header-name{
-	margin: 150px 0 0 0;
+	<!--margin: 150px 0 0 0;--> ;
+	
 }
 
-.about{
+.paragraph-1{
 	font-size: 12px;
-	margin:10px 0 0 0;
+	margin:10px 0 0 0; <!-- необходимо ли сейчас это свойство?--> ;
+	line-height: 1.5;
+	letter-spacing: 0.48px;
+	margin-top: 32px;
+    margin-left: 32px;
+    max-width: 400px;
+
+}
+
+.buttons{
+    margin-left: 32px;
 }
 
 .button{
@@ -42,7 +84,19 @@
 	border-radius: 20.2px;
 	text-align: center;
 	background: transparent;
+	text-transform: uppercase;
+	font-weight: 600;
+    line-height: 2.7;
+	letter-spacing: 2.87px;
+	margin-top: 57px;	
+	<!-- как сделать чтобы текст в кнопке занимал только 110 на 10 пикселей? 
+	думаю из-за этого кнопки не похожи намкнопки на макете--> ;
 }
+
+.button-view{
+	margin-left: 14px;
+}
+
 
 .header{
 	background-image: url(images/header.jpg);
@@ -54,68 +108,204 @@
 .About-img{
 	width: 308px;
 	height: 340px;
+	margin-top: 41px;
+	margin-left: 35px;
+}
+
+.subtitle2{
+    margin-top: 54px;
+	margin-left: 35px;
 }
 
 .About{
 	display: flex;
 }
 
+
+
 .subtitle-text{
-	font-size: 12px
+	font-size: 12px;
+	text-transform: lowercase;
+	font-weight: 600;
+	line-height: 1.5;
+	letter-spacing: 0.48px;
 }
 
 .About-paragraph{
 	display: flex;
+	}
+
+.About-All{
+	margin-top: 44px;
+	margin-left: 55px;
+}
+
+.About-button{
+	margin-top: 38px;
+	margin-left: 85px;
+}
+.About-subtitle{
+	max-width: 400px;
 	
 }
 
-.About-subtitle{
-	max-width: 400px;
+.About-p{
+	font-size: 12px;
+	font-weight: 600;
+	color: rgba(0, 0, 0, 0.7);
+	line-height: 1.5;
+	letter-spacing: 0.48px;
 }
 
 .work-year{
 	display: flex;
+	margin-top: 42px;
 }
 
 .subtitle-h3{
-	font-size: 12px
+	font-size: 12px;
+	line-height: 1.5;
+	letter-spacing: 0.48px;
 }
 
 .button-download {
 	font-size: 12px;
 	color: #000000;
+	font-weight: 600;
+	line-height: 1.5;
+	letter-spacing: 0.48px;
+	margin-top: 32px;
+
 }
 
 .year{
 	font-size: 12px;
-	color: rgba(0, 0, 0, 0.7);
+	font-weight: 300;
+}
+.freelance{
+	margin-top: 40px;
+	margin-left: 171px;
 }
 
 .title-works{
 	text-align: center;
-	
+}
+
+.subtitle-my{
+padding-top: 57px;
 }
 
 
 .Works-img{
 	display: flex;
 	list-style: none;
-	justify-content: center;
+	justify-content: space-around;
 	padding: 0;
+	margin-top: 44px;
+	padding-bottom: 65px;
+}
 
+
+
+.portfolio-item{
+	position: relative;
+}
+
+.portfolio-item::before{
+	content: '';
+	background: rgba(255, 255, 255, 0.5);
+	width: 100%;
+	height: 100%;
+	display: block;
+	position: absolute;
+	<!-- анимации при наведении курсора нет--> ;
+}
+
+
+
+.portfolio-item-text{
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+    text-align: center;
 }
 
 .subtitle-text-3{
 	font-size: 12px;
 	color: rgba(0, 0, 0, 0.6);
+	font-weight: 600;
+	line-height: 1.5;
+	letter-spacing: 0.48px;
 }
 
 .Work-img{
 	width: 364px;
 	height: 234px;
-	padding: 18px;
+	
 }
 
 .latest{
 	background-color: #d1bac8;
+}
+
+.Name-work{
+	font-size: 20px;
+	line-height: 1.2;
+	letter-spacing: 3px;
+	text-transform: uppercase;
+}
+
+.link-img{
+	font-size: 12px;
+	font-weight: 600;
+	line-height: 1.5;
+	letter-spacing: 0.48px;
+	text-decoration: none;
+	color: #000000;
+
+}
+
+.input, .textarea{
+	display: block;
+	text-transform: uppercase;
+	font-size: 12px;
+	font-weight: 600;
+	line-height: 2.7;
+	letter-spacing: 2.16px;
+	margin-bottom: 57px;
+	border: none;
+	border-bottom: 5px solid rgba(0, 0, 0, 0.6);
+	width: 317px;
+
+}
+
+.textarea{
+padding-bottom: 147px;
+
+}
+
+.inputs{
+	display: flex;
+	justify-content: space-between;
+	margin-left: 233px;
+	margin-right: 200px;
+	margin-top: 105px;
+	
+
+}
+
+.Drop{
+	font-size: 12px;
+	font-weight: 600;
+	line-height: 1.5;
+	letter-spacing: 0.48px;
+	color: rgba(0, 0, 0, 0.6);
+	text-align: center;
+	margin-top: 39px;
+}
+
+.Send{
+	background: #000000;
+	margin-left: 513px;
+	margin-bottom: 76px;
 }
