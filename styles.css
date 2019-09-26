@@ -3,7 +3,7 @@
 .container {
 	max-width: 1200px;
 	margin: 0 auto;
-	font-family: 'Poppins' , san-serif;
+	font-family: 'Poppins' , sans-serif;
 }
 
 .title {
@@ -57,13 +57,18 @@
 }
 
 .header-name{
-	<!--margin: 150px 0 0 0;--> ;
-	
+	position: relative;	
+}
+
+.header-name::before{
+	content: '';
+	display: block;
+	position: absolute;
 }
 
 .paragraph-1{
 	font-size: 12px;
-	margin:10px 0 0 0; <!-- необходимо ли сейчас это свойство?--> ;
+	margin:10px 0 0 0;
 	line-height: 1.5;
 	letter-spacing: 0.48px;
 	margin-top: 32px;
@@ -79,7 +84,7 @@
 .button{
 	font-size: 12px;
 	color: #ffffff;
-	padding: 16px 42px 16px 43px;
+	padding: 0px 42px 0px 43px;
 	border: 2px solid #ffffff;
 	border-radius: 20.2px;
 	text-align: center;
@@ -89,8 +94,6 @@
     line-height: 2.7;
 	letter-spacing: 2.87px;
 	margin-top: 57px;	
-	<!-- как сделать чтобы текст в кнопке занимал только 110 на 10 пикселей? 
-	думаю из-за этого кнопки не похожи намкнопки на макете--> ;
 }
 
 .button-view{
@@ -105,7 +108,7 @@
 	background-size: cover;
 }
 
-.About-img{
+.about-img{
 	width: 308px;
 	height: 340px;
 	margin-top: 41px;
@@ -117,7 +120,7 @@
 	margin-left: 35px;
 }
 
-.About{
+.about{
 	display: flex;
 }
 
@@ -131,25 +134,25 @@
 	letter-spacing: 0.48px;
 }
 
-.About-paragraph{
+.about-paragraph{
 	display: flex;
 	}
 
-.About-All{
+.about-all{
 	margin-top: 44px;
 	margin-left: 55px;
 }
 
-.About-button{
+.about-button{
 	margin-top: 38px;
 	margin-left: 85px;
 }
-.About-subtitle{
+.about-subtitle{
 	max-width: 400px;
 	
 }
 
-.About-p{
+.about-p{
 	font-size: 12px;
 	font-weight: 600;
 	color: rgba(0, 0, 0, 0.7);
@@ -196,7 +199,7 @@ padding-top: 57px;
 }
 
 
-.Works-img{
+.works-img{
 	display: flex;
 	list-style: none;
 	justify-content: space-around;
@@ -218,7 +221,6 @@ padding-top: 57px;
 	height: 100%;
 	display: block;
 	position: absolute;
-	<!-- анимации при наведении курсора нет--> ;
 }
 
 
@@ -238,7 +240,7 @@ padding-top: 57px;
 	letter-spacing: 0.48px;
 }
 
-.Work-img{
+.work-img{
 	width: 364px;
 	height: 234px;
 	
@@ -248,7 +250,7 @@ padding-top: 57px;
 	background-color: #d1bac8;
 }
 
-.Name-work{
+.name-work{
 	font-size: 20px;
 	line-height: 1.2;
 	letter-spacing: 3px;
@@ -294,7 +296,7 @@ padding-bottom: 147px;
 
 }
 
-.Drop{
+.drop{
 	font-size: 12px;
 	font-weight: 600;
 	line-height: 1.5;
@@ -304,8 +306,14 @@ padding-bottom: 147px;
 	margin-top: 39px;
 }
 
-.Send{
+.send1{
+	
+	text-align: center;
+}
+
+.send{
 	background: #000000;
-	margin-left: 513px;
-	margin-bottom: 76px;
+	justify-content: center;
+	margin: 0 auto;
+	max-width:212px;
 }
