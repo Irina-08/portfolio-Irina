@@ -1,3 +1,15 @@
+@keyframes myAnimation{
+	0%{
+		transform: scale(0.5,0.5) rotate(0deg); 
+	}
+	100%{
+		transform: scale(1.2,1.2) rotate(360deg);
+	}
+}
+
+.transform{
+animation: myAnimation 10s infinite;
+}
 
 
 .container {
@@ -10,26 +22,24 @@
 	font-size: 20px;
 	text-transform: uppercase;
 	line-height: 1.1;
-	letter-spacing: 4.78px;
+	letter-spacing: 5.4px;
 	width: 100px;
-	height: 39px;
-	margin-top: 28px;
-	margin-left: 35px;
+	height: 44px;
+	margin:25px 0 0 35px;
 }
 
 .links {
 	font-size: 12px;
 	display: flex;
 	justify-content: space-between;
-	width: 400px;
+	width: 255px;
 	padding: 0;
 	list-style: none;	
 	text-transform: uppercase;
 	font-weight: 600;
 	line-height: 2.7;
-	letter-spacing: 2.87px;
-	margin-top: 42px;
-	margin-right: 41px;
+	letter-spacing: 2.85px;
+	margin: 31px 40px 0 0 ;
 }
 
 .link{
@@ -46,14 +56,13 @@
 	font-size: 20px;
 	text-transform: uppercase;
 	line-height: 0.9;
-	letter-spacing: 2px;
+	letter-spacing: 2.87px;
 	font-weight: 600;
 	
 }
 
 .subtitle1{
-    margin-top: 176px;
-    margin-left: 34px;
+	margin: 173px 0 0 34px;
 }
 
 .header-name{
@@ -68,36 +77,41 @@
 
 .paragraph-1{
 	font-size: 12px;
-	margin:10px 0 0 0;
-	line-height: 1.5;
-	letter-spacing: 0.48px;
-	margin-top: 32px;
-    margin-left: 32px;
-    max-width: 400px;
+	margin:32px 0 0 33px;
+	line-height: 1.6;
+	letter-spacing: 0.56px;
+	max-width: 400px;
 
 }
 
 .buttons{
-    margin-left: 32px;
+	margin-left: 32px;
 }
 
 .button{
 	font-size: 12px;
 	color: #ffffff;
-	padding: 0px 42px 0px 43px;
+	padding: 4px 48px 4px 33px;
 	border: 2px solid #ffffff;
 	border-radius: 20.2px;
 	text-align: center;
 	background: transparent;
 	text-transform: uppercase;
 	font-weight: 600;
-    line-height: 2.7;
-	letter-spacing: 2.87px;
-	margin-top: 57px;	
+	line-height: 2.7;
+	letter-spacing: 3.3px;
+	margin-top: 56px;	
+}
+
+.button:hover{
+	cursor: pointer;
+	background: #ffffff;
+	color: #6a4a4c;
+	transition: 2s;
 }
 
 .button-view{
-	margin-left: 14px;
+	margin-left: 10px;
 }
 
 
@@ -111,13 +125,11 @@
 .about-img{
 	width: 308px;
 	height: 340px;
-	margin-top: 41px;
-	margin-left: 35px;
+	margin: 41px 0 0 35px;
 }
 
 .subtitle2{
-    margin-top: 54px;
-	margin-left: 35px;
+	margin: 49px 0 0 36px;
 }
 
 .about{
@@ -132,23 +144,22 @@
 	font-weight: 600;
 	line-height: 1.5;
 	letter-spacing: 0.48px;
+	margin-left: 4px;
 }
 
 .about-paragraph{
 	display: flex;
-	}
+}
 
 .about-all{
-	margin-top: 44px;
-	margin-left: 55px;
+	margin: 27px 0 0 55px;
 }
 
 .about-button{
-	margin-top: 38px;
-	margin-left: 85px;
+	margin: 38px 0 0 85px;
 }
 .about-subtitle{
-	max-width: 400px;
+	max-width: 411px;
 	
 }
 
@@ -156,19 +167,41 @@
 	font-size: 12px;
 	font-weight: 600;
 	color: rgba(0, 0, 0, 0.7);
-	line-height: 1.5;
-	letter-spacing: 0.48px;
+	line-height: 1.54;
+	letter-spacing: 0.5px;
+	margin-top: 23px;
+	max-width: 345px;
+	max-height: 88px;
+
+}
+.about-p1{
+	margin: 20px 0px 0px -5px;
+    max-width: 345px;
 }
 
 .work-year{
 	display: flex;
-	margin-top: 42px;
+	margin-top: 56px;
 }
 
 .subtitle-h3{
 	font-size: 12px;
 	line-height: 1.5;
 	letter-spacing: 0.48px;
+	margin: 24px 0 3px 0;
+	max-width: 253px;
+}
+
+
+
+.subtitle-h3-2{
+	margin-top: 22px;
+	max-width: 125px;
+}
+
+.subtitle-h3-3{
+	margin-top: 18px;
+	max-width: 187px;
 }
 
 .button-download {
@@ -177,17 +210,35 @@
 	font-weight: 600;
 	line-height: 1.5;
 	letter-spacing: 0.48px;
-	margin-top: 32px;
+	margin: 32px 0px 0px 0px ;
 
+}
+
+.button-download::before{
+	content: url(images/download.jpg);
+	background-size: 21px;
+	display: inline-block;
+	margin: 23px 12px 0px -5px;
+}
+
+.link-img::after{
+	content: '\2192';
+	height: 30px;
+	width: 30px;
+	display: inline-block;
 }
 
 .year{
 	font-size: 12px;
 	font-weight: 300;
+	line-height: 1.54px;
+    letter-spacing: 0.8px;
 }
+
+
+
 .freelance{
-	margin-top: 40px;
-	margin-left: 171px;
+	margin: 40px 0 0 171px;
 }
 
 .title-works{
@@ -195,7 +246,9 @@
 }
 
 .subtitle-my{
-padding-top: 57px;
+	padding: 67px 0 0px 13px;
+    line-height: 1.5px;
+    letter-spacing: 2.2px;
 }
 
 
@@ -204,7 +257,7 @@ padding-top: 57px;
 	list-style: none;
 	justify-content: space-around;
 	padding: 0;
-	margin-top: 44px;
+	margin: 44px 24px 0px 28px;
 	padding-bottom: 65px;
 }
 
@@ -214,22 +267,37 @@ padding-top: 57px;
 	position: relative;
 }
 
+.portfolio-item:hover{
+	cursor: pointer;
+}
+
 .portfolio-item::before{
 	content: '';
 	background: rgba(255, 255, 255, 0.5);
 	width: 100%;
-	height: 100%;
-	display: block;
+	height: 234px;
+	opacity: 0;
 	position: absolute;
+	transition: all 2s;
 }
 
+.portfolio-item:hover::before{
+	opacity: 1;
 
+}
 
 .portfolio-item-text{
 	position: absolute;
-	bottom: 0;
-	width: 100%;
-    text-align: center;
+    bottom: 0;
+    width: 100%;
+    text-align: left;
+    opacity: 0;
+    transition: all 2s;
+    margin: 0 0 6px 38px;
+}
+
+.portfolio-item:hover .portfolio-item-text{
+	opacity: 1;
 }
 
 .subtitle-text-3{
@@ -248,6 +316,7 @@ padding-top: 57px;
 
 .latest{
 	background-color: #d1bac8;
+	margin-top: 56px;
 }
 
 .name-work{
@@ -255,43 +324,42 @@ padding-top: 57px;
 	line-height: 1.2;
 	letter-spacing: 3px;
 	text-transform: uppercase;
+	margin: 0px 0 7px 0;
 }
 
 .link-img{
 	font-size: 12px;
-	font-weight: 600;
-	line-height: 1.5;
-	letter-spacing: 0.48px;
-	text-decoration: none;
-	color: #000000;
-
+    font-weight: 600;
+    line-height: 1.1;
+    letter-spacing: 0.48px;
+    text-decoration: none;
+    color: #000000;
 }
 
 .input, .textarea{
-	display: block;
-	text-transform: uppercase;
-	font-size: 12px;
-	font-weight: 600;
-	line-height: 2.7;
-	letter-spacing: 2.16px;
-	margin-bottom: 57px;
-	border: none;
-	border-bottom: 5px solid rgba(0, 0, 0, 0.6);
-	width: 317px;
+	    display: block;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 2.7;
+    letter-spacing: 3.16px;
+    margin-bottom: 26px;
+    border: none;
+    border-bottom: 5px solid rgba(0, 0, 0, 0.6);
+    width: 360px;
 
 }
 
 .textarea{
-padding-bottom: 147px;
+	padding-bottom: 100px;
+    margin-top: -2px;
 
 }
 
 .inputs{
 	display: flex;
 	justify-content: space-between;
-	margin-left: 233px;
-	margin-right: 200px;
-	margin-top: 105px;
+	margin: 72px 200px 20px 233px;
 	
 
 }
@@ -303,11 +371,10 @@ padding-bottom: 147px;
 	letter-spacing: 0.48px;
 	color: rgba(0, 0, 0, 0.6);
 	text-align: center;
-	margin-top: 39px;
+	margin-top: 33px;
 }
 
 .send1{
-	
 	text-align: center;
 }
 
@@ -315,5 +382,4 @@ padding-bottom: 147px;
 	background: #000000;
 	justify-content: center;
 	margin: 0 auto;
-	max-width:212px;
 }
