@@ -8,27 +8,26 @@
 }
 
 .transform{
-animation: myAnimation 10s infinite;
+	animation: myAnimation 10s infinite;
 }
 
 
-.container {
+.container{
 	max-width: 1200px;
 	margin: 0 auto;
 	font-family: 'Poppins' , sans-serif;
 }
 
-.title {
+.title{
 	font-size: 20px;
 	text-transform: uppercase;
 	line-height: 1.1;
-	letter-spacing: 5.4px;
-	width: 100px;
-	height: 44px;
+	letter-spacing: 5.9px;
+	max-width: 100px;
 	margin:25px 0 0 35px;
 }
 
-.links {
+.links{
 	font-size: 12px;
 	display: flex;
 	justify-content: space-between;
@@ -47,7 +46,7 @@ animation: myAnimation 10s infinite;
 	color: #000000;
 }
 
-.header-container {
+.header-container{
 	display: flex;
 	justify-content: space-between;
 }
@@ -56,51 +55,48 @@ animation: myAnimation 10s infinite;
 	font-size: 20px;
 	text-transform: uppercase;
 	line-height: 0.9;
-	letter-spacing: 2.87px;
+	letter-spacing: 2.8px; 
 	font-weight: 600;
+	margin: 0;
 	
 }
 
-.subtitle1{
-	margin: 173px 0 0 34px;
-}
+
 
 .header-name{
-	position: relative;	
+	position: absolute;	
+	top: 243px;
+	left: 34px;
 }
 
-.header-name::before{
-	content: '';
-	display: block;
-	position: absolute;
-}
+
 
 .paragraph-1{
 	font-size: 12px;
-	margin:32px 0 0 33px;
-	line-height: 1.6;
+	margin:32px 0 0 0px;
+	line-height: 1.5;
 	letter-spacing: 0.56px;
 	max-width: 400px;
-
 }
 
 .buttons{
-	margin-left: 32px;
+	margin-top: 5px;
 }
 
 .button{
+	margin-top: 56px;	
 	font-size: 12px;
 	color: #ffffff;
-	padding: 4px 48px 4px 33px;
+	padding: 4px 36px 4px 36px;; 
 	border: 2px solid #ffffff;
 	border-radius: 20.2px;
 	text-align: center;
 	background: transparent;
 	text-transform: uppercase;
 	font-weight: 600;
-	line-height: 2.7;
-	letter-spacing: 3.3px;
-	margin-top: 56px;	
+	line-height: 2.3;
+	letter-spacing: 3.9px;
+	margin-top: 56px;
 }
 
 .button:hover{
@@ -111,15 +107,15 @@ animation: myAnimation 10s infinite;
 }
 
 .button-view{
-	margin-left: 10px;
+	margin-left: 12px;
 }
-
 
 .header{
 	background-image: url(images/header.jpg);
 	height: 714px;
 	background-repeat: no-repeat;
 	background-size: cover;
+	position: relative;
 }
 
 .about-img{
@@ -129,22 +125,21 @@ animation: myAnimation 10s infinite;
 }
 
 .subtitle2{
-	margin: 49px 0 0 36px;
+	margin: 49px 0 0 35px;
+	display: flex;
 }
 
 .about{
 	display: flex;
 }
 
-
-
 .subtitle-text{
 	font-size: 12px;
 	text-transform: lowercase;
 	font-weight: 600;
 	line-height: 1.5;
-	letter-spacing: 0.48px;
-	margin-left: 4px;
+	letter-spacing: 0.47px;
+	margin: 3px 0 0 9px;
 }
 
 .about-paragraph{
@@ -152,15 +147,15 @@ animation: myAnimation 10s infinite;
 }
 
 .about-all{
-	margin: 27px 0 0 55px;
+	margin: 43px 0 0 56px;
 }
 
 .about-button{
-	margin: 38px 0 0 85px;
+	margin: 22px 0 0 82px;
 }
+
 .about-subtitle{
-	max-width: 411px;
-	
+	max-width: 345px;
 }
 
 .about-p{
@@ -170,18 +165,16 @@ animation: myAnimation 10s infinite;
 	line-height: 1.54;
 	letter-spacing: 0.5px;
 	margin-top: 23px;
-	max-width: 345px;
-	max-height: 88px;
-
 }
+
 .about-p1{
 	margin: 20px 0px 0px -5px;
-    max-width: 345px;
+	max-width: 345px;
 }
 
 .work-year{
 	display: flex;
-	margin-top: 56px;
+	margin-top: 70px;
 }
 
 .subtitle-h3{
@@ -191,9 +184,8 @@ animation: myAnimation 10s infinite;
 	margin: 24px 0 3px 0;
 	max-width: 253px;
 }
-
-
-
+/*не есть хорошо для каждого свой класс. нужно стараться избегать. 
+Пока не поняла как обойтись без них, что бы тест был в точности как на макете*/
 .subtitle-h3-2{
 	margin-top: 22px;
 	max-width: 125px;
@@ -210,18 +202,32 @@ animation: myAnimation 10s infinite;
 	font-weight: 600;
 	line-height: 1.5;
 	letter-spacing: 0.48px;
-	margin: 32px 0px 0px 0px ;
-
+	margin: 0px 0px 0px 31px;
+	align-items: center;
+	display: flex;
+	padding: 28px 0 0 0px;
+	position: relative;
 }
 
 .button-download::before{
 	content: url(images/download.jpg);
 	background-size: 21px;
 	display: inline-block;
-	margin: 23px 12px 0px -5px;
+	margin: 2px 0px 0px -30px;
+	position: absolute;
+	left: -3px;
+	text-underline-position: under; /* либо с помощью border botton*/
 }
 
 .link-img::after{
+	content: '\2192';
+	height: 30px;
+	width: 30px;
+	display: inline-block;
+}
+/* не удалось сделать их в одном*/
+
+.send::after{
 	content: '\2192';
 	height: 30px;
 	width: 30px;
@@ -231,37 +237,28 @@ animation: myAnimation 10s infinite;
 .year{
 	font-size: 12px;
 	font-weight: 300;
-	line-height: 1.54px;
-    letter-spacing: 0.8px;
+	line-height: 1.54;
+	letter-spacing: 0.8px;
 }
 
-
-
 .freelance{
-	margin: 40px 0 0 171px;
+	margin: 25px 0 0 170px;
 }
 
 .title-works{
 	text-align: center;
+	line-height: 2.8;
 }
-
-.subtitle-my{
-	padding: 67px 0 0px 13px;
-    line-height: 1.5px;
-    letter-spacing: 2.2px;
-}
-
 
 .works-img{
 	display: flex;
 	list-style: none;
 	justify-content: space-around;
 	padding: 0;
-	margin: 44px 24px 0px 28px;
-	padding-bottom: 65px;
+	margin: 32px auto 0px;
+	padding-bottom: 50px;
+	max-width: 1150px;
 }
-
-
 
 .portfolio-item{
 	position: relative;
@@ -288,12 +285,13 @@ animation: myAnimation 10s infinite;
 
 .portfolio-item-text{
 	position: absolute;
-    bottom: 0;
-    width: 100%;
-    text-align: left;
-    opacity: 0;
-    transition: all 2s;
-    margin: 0 0 6px 38px;
+	bottom: 0;
+	width: 100%;
+	text-align: left;
+	opacity: 0;
+	transition: all 2s;
+	padding: : 0 0 6px 38px; /*почему то перестал работать*/
+	box-sizing: border-box;
 }
 
 .portfolio-item:hover .portfolio-item-text{
@@ -305,18 +303,18 @@ animation: myAnimation 10s infinite;
 	color: rgba(0, 0, 0, 0.6);
 	font-weight: 600;
 	line-height: 1.5;
-	letter-spacing: 0.48px;
+	letter-spacing: 0.4px;
 }
 
 .work-img{
 	width: 364px;
 	height: 234px;
-	
 }
 
 .latest{
 	background-color: #d1bac8;
 	margin-top: 56px;
+	padding: 54px 0 0px 3px;
 }
 
 .name-work{
@@ -324,42 +322,43 @@ animation: myAnimation 10s infinite;
 	line-height: 1.2;
 	letter-spacing: 3px;
 	text-transform: uppercase;
-	margin: 0px 0 7px 0;
+	margin: 0px 35px 15px 38px;
 }
 
 .link-img{
 	font-size: 12px;
-    font-weight: 600;
-    line-height: 1.1;
-    letter-spacing: 0.48px;
-    text-decoration: none;
-    color: #000000;
+	font-weight: 600;
+	line-height: 1.1;
+	letter-spacing: 0.48px;
+	text-decoration: none;
+	color: #000000;
 }
 
 .input, .textarea{
-	    display: block;
-    text-transform: uppercase;
-    font-size: 12px;
-    font-weight: 600;
-    line-height: 2.7;
-    letter-spacing: 3.16px;
-    margin-bottom: 26px;
-    border: none;
-    border-bottom: 5px solid rgba(0, 0, 0, 0.6);
-    width: 360px;
+	display: block;
+	text-transform: uppercase;
+	font-size: 12px;
+	font-weight: 600;
+	line-height: 2.7;
+	letter-spacing: 3.16px;
+	margin-bottom: 27px;
+	border: none;
+	border-bottom: 5px solid rgba(0, 0, 0, 0.6);
+	width: 360px;
+	outline: none;
 
 }
 
 .textarea{
-	padding-bottom: 100px;
-    margin-top: -2px;
+	padding-bottom: 104px;
+	margin-top: -3px;
 
 }
 
 .inputs{
 	display: flex;
 	justify-content: space-between;
-	margin: 72px 200px 20px 233px;
+	margin: 70px 200px 20px 234px;
 	
 
 }
@@ -368,10 +367,10 @@ animation: myAnimation 10s infinite;
 	font-size: 12px;
 	font-weight: 600;
 	line-height: 1.5;
-	letter-spacing: 0.48px;
+	letter-spacing: 0.5px;
 	color: rgba(0, 0, 0, 0.6);
 	text-align: center;
-	margin-top: 33px;
+	margin-top: 34px;
 }
 
 .send1{
@@ -381,5 +380,6 @@ animation: myAnimation 10s infinite;
 .send{
 	background: #000000;
 	justify-content: center;
-	margin: 0 auto;
+	margin: 0 0 0 38px; /* иначе кнопка не на свом месте*/
+	border: 2px solid #000000;
 }
