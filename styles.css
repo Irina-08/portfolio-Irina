@@ -1,35 +1,44 @@
+@keyframes myAnimation{
+	0%{
+		transform: scale(0.5,0.5) rotate(0deg); 
+	}
+	100%{
+		transform: scale(1.2,1.2) rotate(360deg);
+	}
+}
+
+.transform{
+	animation: myAnimation 10s infinite;
+}
 
 
-.container {
+.container{
 	max-width: 1200px;
 	margin: 0 auto;
 	font-family: 'Poppins' , sans-serif;
 }
 
-.title {
+.title{
 	font-size: 20px;
 	text-transform: uppercase;
 	line-height: 1.1;
-	letter-spacing: 4.78px;
-	width: 100px;
-	height: 39px;
-	margin-top: 28px;
-	margin-left: 35px;
+	letter-spacing: 5.9px;
+	max-width: 100px;
+	margin:25px 0 0 35px;
 }
 
-.links {
+.links{
 	font-size: 12px;
 	display: flex;
 	justify-content: space-between;
-	width: 400px;
+	width: 255px;
 	padding: 0;
 	list-style: none;	
 	text-transform: uppercase;
 	font-weight: 600;
 	line-height: 2.7;
-	letter-spacing: 2.87px;
-	margin-top: 42px;
-	margin-right: 41px;
+	letter-spacing: 2.85px;
+	margin: 31px 40px 0 0 ;
 }
 
 .link{
@@ -37,7 +46,7 @@
 	color: #000000;
 }
 
-.header-container {
+.header-container{
 	display: flex;
 	justify-content: space-between;
 }
@@ -46,129 +55,144 @@
 	font-size: 20px;
 	text-transform: uppercase;
 	line-height: 0.9;
-	letter-spacing: 2px;
+	letter-spacing: 2.8px; 
 	font-weight: 600;
+	margin: 0;
 	
 }
 
-.subtitle1{
-    margin-top: 176px;
-    margin-left: 34px;
-}
+
 
 .header-name{
-	position: relative;	
+	position: absolute;	
+	top: 243px;
+	left: 34px;
 }
 
-.header-name::before{
-	content: '';
-	display: block;
-	position: absolute;
-}
+
 
 .paragraph-1{
 	font-size: 12px;
-	margin:10px 0 0 0;
+	margin:32px 0 0 0px;
 	line-height: 1.5;
-	letter-spacing: 0.48px;
-	margin-top: 32px;
-    margin-left: 32px;
-    max-width: 400px;
-
+	letter-spacing: 0.56px;
+	max-width: 400px;
 }
 
 .buttons{
-    margin-left: 32px;
+	margin: 5px 0 0 0;
 }
 
 .button{
+	margin: 56px 0 0 0;	
 	font-size: 12px;
 	color: #ffffff;
-	padding: 0px 42px 0px 43px;
+	padding: 4px 36px 4px 36px;; 
 	border: 2px solid #ffffff;
 	border-radius: 20.2px;
 	text-align: center;
 	background: transparent;
 	text-transform: uppercase;
 	font-weight: 600;
-    line-height: 2.7;
-	letter-spacing: 2.87px;
-	margin-top: 57px;	
+	line-height: 2.3;
+	letter-spacing: 3.9px;
+}
+
+.button:hover{
+	cursor: pointer;
+	background: #ffffff;
+	color: #6a4a4c;
+	transition: 2s;
 }
 
 .button-view{
-	margin-left: 14px;
+	margin: 0 0 0 12px;
 }
-
 
 .header{
 	background-image: url(images/header.jpg);
 	height: 714px;
 	background-repeat: no-repeat;
 	background-size: cover;
+	position: relative;
 }
 
 .about-img{
 	width: 308px;
 	height: 340px;
-	margin-top: 41px;
-	margin-left: 35px;
+	margin: 41px 0 0 35px;
 }
 
 .subtitle2{
-    margin-top: 54px;
-	margin-left: 35px;
+	margin: 49px 0 0 35px;
+	display: flex;
 }
 
 .about{
 	display: flex;
 }
 
-
-
 .subtitle-text{
 	font-size: 12px;
 	text-transform: lowercase;
 	font-weight: 600;
 	line-height: 1.5;
-	letter-spacing: 0.48px;
+	letter-spacing: 0.47px;
+	margin: 3px 0 0 9px;
 }
 
 .about-paragraph{
 	display: flex;
-	}
+}
 
 .about-all{
-	margin-top: 44px;
-	margin-left: 55px;
+	margin: 43px 0 0 56px;
 }
 
 .about-button{
-	margin-top: 38px;
-	margin-left: 85px;
+	margin: 22px 0 0 82px;
 }
+
 .about-subtitle{
-	max-width: 400px;
-	
+	max-width: 345px;
 }
 
 .about-p{
 	font-size: 12px;
 	font-weight: 600;
 	color: rgba(0, 0, 0, 0.7);
-	line-height: 1.5;
-	letter-spacing: 0.48px;
+	line-height: 1.54;
+	letter-spacing: 0.5px;
+	margin: 23px 0 0 0;
+}
+
+.about-p1{
+	margin: 20px 0px 0px -5px;
+	max-width: 345px;
 }
 
 .work-year{
 	display: flex;
-	margin-top: 42px;
+	margin: 82px 0 0 0;
 }
 
 .subtitle-h3{
 	font-size: 12px;
 	line-height: 1.5;
 	letter-spacing: 0.48px;
+	margin: 24px 0 3px 0;
+	max-width: 253px;
+}
+/*не есть хорошо для каждого свой класс. нужно стараться избегать. 
+Пока не поняла как обойтись без них, что бы тест был в точности как на макете*/
+.subtitle-h3-2{
+	margin: 22px 0 0 0;
+	max-width: 125px;
+}
+
+.subtitle-h3-3{
+	margin: 18px 0 0 0;
+	max-width: 187px;
 }
 
 .button-download {
@@ -177,59 +201,100 @@
 	font-weight: 600;
 	line-height: 1.5;
 	letter-spacing: 0.48px;
-	margin-top: 32px;
+	margin: 0px 0px 0px 31px;
+	align-items: center;
+	display: flex;
+	padding: 28px 0 0 0px;
+	position: relative;
+}
 
+.button-download::before{
+	content: url(images/download.jpg);
+	background-size: 21px;
+	display: inline-block;
+	margin: 2px 0px 0px -30px;
+	position: absolute;
+	left: -3px;
+}
+
+.link-img::after{
+	content: '\2192';
+	height: 30px;
+	width: 30px;
+	display: inline-block;
+	margin: 0 0 0px 17px;
+}
+/* не удалось сделать их в одном*/
+
+.send::after{
+	content: '\2192';
+	height: 30px;
+	width: 30px;
+	display: inline-block;
 }
 
 .year{
 	font-size: 12px;
 	font-weight: 300;
+	line-height: 1.54;
+	letter-spacing: 0.8px;
 }
+
 .freelance{
-	margin-top: 40px;
-	margin-left: 171px;
+	margin: 25px 0 0 170px;
 }
 
 .title-works{
 	text-align: center;
+	line-height: 2.8;
 }
-
-.subtitle-my{
-padding-top: 57px;
-}
-
 
 .works-img{
 	display: flex;
 	list-style: none;
 	justify-content: space-around;
 	padding: 0;
-	margin-top: 44px;
-	padding-bottom: 65px;
+	margin: 32px auto 0px;
+	padding-bottom: 50px;
+	max-width: 1150px;
 }
-
-
 
 .portfolio-item{
 	position: relative;
+}
+
+.portfolio-item:hover{
+	cursor: pointer;
 }
 
 .portfolio-item::before{
 	content: '';
 	background: rgba(255, 255, 255, 0.5);
 	width: 100%;
-	height: 100%;
-	display: block;
+	height: 234px;
+	opacity: 0;
 	position: absolute;
+	transition: all 2s;
 }
 
+.portfolio-item:hover::before{
+	opacity: 1;
 
+}
 
 .portfolio-item-text{
 	position: absolute;
-	bottom: 0;
-	width: 100%;
-    text-align: center;
+    bottom: 0;
+    width: 100%;
+    text-align: left;
+    opacity: 0;
+    transition: all 2s;
+    padding: 0px 21px 16px 38px;
+    box-sizing: border-box;
+}
+
+.portfolio-item:hover .portfolio-item-text{
+	opacity: 1;
 }
 
 .subtitle-text-3{
@@ -237,17 +302,18 @@ padding-top: 57px;
 	color: rgba(0, 0, 0, 0.6);
 	font-weight: 600;
 	line-height: 1.5;
-	letter-spacing: 0.48px;
+	letter-spacing: 0.4px;
 }
 
 .work-img{
 	width: 364px;
 	height: 234px;
-	
 }
 
 .latest{
 	background-color: #d1bac8;
+	margin: 56px 0 0 0;
+	padding: 54px 0 0px 3px;
 }
 
 .name-work{
@@ -255,16 +321,16 @@ padding-top: 57px;
 	line-height: 1.2;
 	letter-spacing: 3px;
 	text-transform: uppercase;
+	margin: 0px 0 0 0;
 }
 
 .link-img{
 	font-size: 12px;
 	font-weight: 600;
-	line-height: 1.5;
+	line-height: 1.1;
 	letter-spacing: 0.48px;
 	text-decoration: none;
 	color: #000000;
-
 }
 
 .input, .textarea{
@@ -273,25 +339,25 @@ padding-top: 57px;
 	font-size: 12px;
 	font-weight: 600;
 	line-height: 2.7;
-	letter-spacing: 2.16px;
-	margin-bottom: 57px;
+	letter-spacing: 3.16px;
+	margin-bottom: 27px;
 	border: none;
 	border-bottom: 5px solid rgba(0, 0, 0, 0.6);
-	width: 317px;
+	width: 360px;
+	outline: none;
 
 }
 
 .textarea{
-padding-bottom: 147px;
+	padding-bottom: 104px;
+	margin: -3px 0 0 0;
 
 }
 
 .inputs{
 	display: flex;
 	justify-content: space-between;
-	margin-left: 233px;
-	margin-right: 200px;
-	margin-top: 105px;
+	margin: 70px 200px 20px 234px;
 	
 
 }
@@ -300,20 +366,20 @@ padding-bottom: 147px;
 	font-size: 12px;
 	font-weight: 600;
 	line-height: 1.5;
-	letter-spacing: 0.48px;
+	letter-spacing: 0.5px;
 	color: rgba(0, 0, 0, 0.6);
 	text-align: center;
-	margin-top: 39px;
+	margin: 35px 0 0 0;
 }
 
 .send1{
-	
 	text-align: center;
 }
 
 .send{
 	background: #000000;
-	justify-content: center;
-	margin: 0 auto;
-	max-width:212px;
+    justify-content: center;
+    margin: 4px 0px 50px 36px;
+    border: 2px solid #000000;
+    padding: 3px 16px 3px 25px;
 }
