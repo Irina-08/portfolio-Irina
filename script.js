@@ -16,77 +16,36 @@
 //}
 
 var myForm = document.getElementById("form");
-//console.log(myForm);
+
+
+function checkForm(element){
+	var value = element && element.value; 
+	if (value === ''){
+		element.style.borderBottom = "5px solid red"; 
+		return false;
+	    } 
+	else{
+		 element.style.borderBottom = "5px solid rgba(0, 0, 0, 0.6)"; 
+		 return true;
+	}
+
+}
 
 function validate(event) {
 	event.preventDefault();
-	//console.log(event);
-	var myName = document.getElementById("name"); 
-	//console.log(myName);
-	var myNameValue = myName && myName.value; 
-	console.log(myNameValue);
-
-	if (myNameValue === ''){
-		//console.log("ошибка");
-		myName.style.borderBottom = "5px solid red"; 
-	} 
-	else {
-		myName.style.borderBottom = "5px solid rgba(0, 0, 0, 0.6)"; 
+	var elementsForm = document.getElementsByClassName("required");
+	var correctElements=0;
+	for (var i = 0; i<elementsForm.length; i++) {
+		const isCorrect=checkForm(elementsForm[i]);
+		if(isCorrect===true){
+			correctElements++;
+		}
 	}
-	var myEmail = document.getElementById("email"); 
-	var myEmailValue = myEmail && myEmail.value; 
-
-	if (myEmailValue === ''){
-		myEmail.style.borderBottom = "5px solid red";  
-	} 
-	else {
-		myEmail.style.borderBottom = "5px solid rgba(0, 0, 0, 0.6)"; 
+	if (correctElements===elementsForm.length){
+		console.log(correctElements);
+		document.getElementById('thanks').innerHTML="Спасибо, ваша заявка отправлена!";
 	}
 
-	var mySubject = document.getElementById("subject"); 
-	var mySubjectValue = mySubject && mySubject.value; 
-
-	if (mySubjectValue === ''){
-		mySubject.style.borderBottom = "5px solid red"; 
-	} 
-	else {
-		mySubject.style.borderBottom = "5px solid rgba(0, 0, 0, 0.6)"; 
-	}
-
-    var myMessage = document.getElementById("message"); 
-	var myMessageValue = mySubject && myMessage.value; 
-	
-	if (myMessageValue === ''){
-		myMessage.style.borderBottom = "5px solid red"; 
-	} 
-	else {
-		myMessage.style.borderBottom = "5px solid rgba(0, 0, 0, 0.6)"; 
-	}
 }
 form.addEventListener('submit', validate);
 
-
-//var myInpyt =[document.getElementById("name"), document.getElementById("email"), document.getElementById("subject"),
-	//document.getElementById("message")] ; len = myInpyt.length;
-	//for (var i = 0; i < len; i++){ 
-		//alert(myInpyt[i]);
-	//	console.log(myInpyt);
-	//}
-
-	//var myInpytValue =[document.getElementById("name"), document.getElementById("email"), document.getElementById("subject"),
-	//document.getElementById("message")] ; len = myInpytValue.length;
-	//for (var i = 0; i < 4; i++)
-	//var myInpytValue = (myInpyt[i] && myInpyt[i]+'.value');
-	//{ 
-	//	alert(myInpytValue[i]);
-	//	console.log(myInpytValue);
-	//}
-
-	//if (myInpytValue === '')
-	//for (var i = 0; i < len; i++){
-	//console.log("ошибка");
-	//myInpyt.style.borderBottom = "5px solid red"; 
-	//} 
-	//else {
-	//myInpyt.style.borderBottom = "5px solid rgba(0, 0, 0, 0.6)"; 
-	//}
