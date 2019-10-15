@@ -383,3 +383,15 @@
     border: 2px solid #000000;
     padding: 3px 16px 3px 25px;
 }
+
+.result{
+text-align: center;
+margin-top: -200px;
+}
+
+.thanks{
+	text-align: center;
+	font-size: 20px;
+
+	color: #6a4a4c;
+}
