@@ -13,6 +13,38 @@
 	font-family: 'Poppins' , sans-serif;
 }
 
+.subtitle{
+	font-size: 20px;
+	text-transform: uppercase;
+	line-height: 0.9;
+	letter-spacing: 2.8px; 
+	font-weight: 600;
+	margin: 0;
+}
+
+.subtitle_about{
+	margin: 49px 0 0 38px;
+	display: flex;
+}
+
+.subtitle__text{
+	font-size: 12px;
+	text-transform: lowercase;
+	font-weight: 600;
+	line-height: 1.5;
+	letter-spacing: 0.47px;
+	margin: 3px 0 0 9px;
+}
+
+.subtitle__projects{
+	font-size: 12px;
+	color: rgba(0, 0, 0, 0.6);
+	font-weight: 600;
+	line-height: 1.5;
+	letter-spacing: 0.4px;
+}
+
+
 .header{
 	background-image: url(images/header.jpg);
 	height: 714px;
@@ -60,15 +92,6 @@
 	left: 34px;
 }
 
-.subtitle{
-	font-size: 20px;
-	text-transform: uppercase;
-	line-height: 0.9;
-	letter-spacing: 2.8px; 
-	font-weight: 600;
-	margin: 0;
-}
-
 .header__text{
 	font-size: 12px;
 	margin:32px 0 0 0px;
@@ -77,12 +100,8 @@
 	max-width: 400px;
 }
 
-.header__buttons_top{
-	margin: 5px 0 0 0;
-}
-
 .header__button{
-	margin: 56px 0 0 0;	
+	margin: 62px 0 0 0;	
 	font-size: 12px;
 	color: #ffffff;
 	padding: 4px 36px 4px 36px;; 
@@ -107,6 +126,21 @@
 	margin: 0 0 0 12px;
 }
 
+.header__button_background{
+	background: #000000;
+    justify-content: center;
+    margin: 4px 0px 50px 36px;
+    border: 2px solid #000000;
+    padding: 3px 16px 3px 25px;
+}
+
+.header__button_background::after{
+	content: '\2192';
+	height: 30px;
+	width: 30px;
+	display: inline-block;
+}
+
 .about{
 	display: flex;
 }
@@ -121,48 +155,23 @@
 	animation: myAnimation 10s infinite;
 }
 
-.subtitle_about{
-	margin: 49px 0 0 35px;
+.introduction{
 	display: flex;
-}
-
-.subtitle__text{
-	font-size: 12px;
-	text-transform: lowercase;
-	font-weight: 600;
-	line-height: 1.5;
-	letter-spacing: 0.47px;
-	margin: 3px 0 0 9px;
+	margin: 45px 0 0 59px;
 }
 
 .introduction__text{
 	font-size: 12px;
-	font-weight: 600;
-	color: rgba(0, 0, 0, 0.7);
-	line-height: 1.54;
-	letter-spacing: 0.5px;
-	margin: 23px 0 0 0;
-}
-
-.introduction_flex{
-	display: flex;
-}
-
-.introduction_margin{
-	margin: 43px 0 0 56px;
-}
-
-.introduction_left{
-	max-width: 345px;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.7);
+    line-height: 1.54;
+    letter-spacing: 0.5px;
+    margin: 20px 0 0 0px;
+    max-width: 345px;
 }
 
 .introduction__right{
 	margin: 22px 0 0 82px;
-}
-
-.introduction__text_margin{
-	margin: 20px 0px 0px -5px;
-	max-width: 345px;
 }
 
 .introduction__link {
@@ -188,8 +197,7 @@
 }
 
 .work{
-	display: flex;
-	margin: 82px 0 0 0;
+	margin: 85px 0 0 57px;
 }
 
 .work__title{
@@ -212,35 +220,27 @@
 	letter-spacing: 0.8px;
 }
 
-.work_right{
-	margin: 25px 0 0 170px;
+.row{
+	display: flex;
 }
 
-.work__title_max-width{
-	margin: 18px 0 0 0;
-	max-width: 187px;
+.colum{
+	flex: 50%;
+}
+
+.colum_right{
+	flex: 40%;
 }
 
 .latest{
 	background-color: #d1bac8;
 	margin: 56px 0 0 0;
 	padding: 54px 0 0px 3px;
-}
-
-.subtitle_center{
 	text-align: center;
 	line-height: 2.8;
 }
 
-.subtitle__projects{
-	font-size: 12px;
-	color: rgba(0, 0, 0, 0.6);
-	font-weight: 600;
-	line-height: 1.5;
-	letter-spacing: 0.4px;
-}
-
-.list{
+.latest__list{
 	display: flex;
 	list-style: none;
 	justify-content: space-around;
@@ -250,15 +250,15 @@
 	max-width: 1150px;
 }
 
-.portfolioItem{
+.latest__item{
 	position: relative;
 }
 
-.portfolioItem:hover{
+.latest__item:hover{
 	cursor: pointer;
 }
 
-.portfolioItem::before{
+.latest__item::before{
 	content: '';
 	background: rgba(255, 255, 255, 0.5);
 	width: 100%;
@@ -268,11 +268,15 @@
 	transition: all 2s;
 }
 
-.portfolioItem:hover::before{
+.latest__item:hover::before{
 	opacity: 1;
 }
 
-.portfolioItem__img{
+.latest__item:hover .portfolioItemText{
+	opacity: 1;
+}
+
+.latest__img{
 	width: 364px;
 	height: 234px;
 }
@@ -286,15 +290,6 @@
     transition: all 2s;
     padding: 0px 21px 16px 38px;
     box-sizing: border-box;
-}
-
-.portfolioItem:hover .portfolioItemText{
-	opacity: 1;
-}
-
-.portfolioItem__img{
-	width: 364px;
-	height: 234px;
 }
 
 .portfolioItemText__name{
@@ -332,6 +327,10 @@
 	margin: 35px 0 0 0;
 }
 
+.feedbackForm__button{
+	text-align: center;
+}
+
 .pop-upWindow{
 	text-align: center;
 	font-size: 20px;
@@ -363,23 +362,4 @@
 .form__textarea{
 	padding-bottom: 104px;
 	margin: -3px 0 0 0;
-}
-
-.feedbackForm__button{
-	text-align: center;
-}
-
-.header__button_background{
-	background: #000000;
-    justify-content: center;
-    margin: 4px 0px 50px 36px;
-    border: 2px solid #000000;
-    padding: 3px 16px 3px 25px;
-}
-
-.header__button_background::after{
-	content: '\2192';
-	height: 30px;
-	width: 30px;
-	display: inline-block;
 }

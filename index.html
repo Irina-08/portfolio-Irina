@@ -24,9 +24,9 @@
  			<div class="header__name">
  				<h2 class="subtitle">HELLO, I&rsquo;M&nbsp;JANE FOSTER</h2>
  				<p class="header__text">I&nbsp;am a&nbsp;photographer and art director based in&nbsp;Paris currently having a&nbsp;great time working at&nbsp;personal portfolio. 
-					<br/>
-				I&nbsp;also freelance for many companies on&nbsp;my&nbsp;spare time and help them create joyful digital experiences.</p>
- 				<div class="header__buttons_top">
+ 					<br/>
+ 				I&nbsp;also freelance for many companies on&nbsp;my&nbsp;spare time and help them create joyful digital experiences.</p>
+ 				<div>
  					<button class="header__button">contact me</button>
  					<button class="header__button header__button_left">view works</button>
  				</div>
@@ -34,75 +34,79 @@
  		</header>
  		<main>
  			<section class="about">
- 				<div>
+ 				<div class="imgPortfolio">
  					<img class="imgPortfolio__img imgPortfolio__img_animation" src="images/About.jpg" 
  					srcset="images/About@2x.jpg 2x">
  					<span class="subtitle subtitle_about">JANE FOSTER,<span class="subtitle__text"> photographer</span></span>
  				</div>
- 				<div class="introduction_margin">
- 					<div class="introduction_flex">
- 						<div class="introduction_left">
+ 				<div>
+ 					<div class="introduction">
+ 						<div>
  							<h2 class="subtitle">About Me</h2>
  							<p class="introduction__text">I&nbsp;am a&nbsp;photographer and art director based in&nbsp;Paris currently having a&nbsp;great time working at&nbsp;personal portfolio. I&nbsp;also freelance for many companies on&nbsp;my&nbsp;spare time and help them create joyful digital experiences and unique visual identities.</p>
  						</div>
  						<div class="introduction__right">
- 							<p class="introduction__text introduction__text_margin">Wanna hire me&nbsp;for working on&nbsp;your company for full time or&nbsp;part time?</p>
+ 							<p class="introduction__text">Wanna hire me&nbsp;for working on&nbsp;your company for full time or&nbsp;part time?</p>
  							<a class="introduction__link" href="">Download my&nbsp;CV</a>
  						</div>
  					</div>
  					<div class="work">
- 						<div>
- 							<h2 class="subtitle">Work experience</h2>
- 							<h3 class="work__title">Postent, event photographer assistant
- 								Paris, France
- 							</h3>
- 							<span class="work__date">2012-2013</span>
- 							<h3 class="work__title work__title_top">Photof, art director
- 								Florence, Italy
- 							</h3>
- 							<span class="work__date">2013-2017</span>
- 						</div>
- 						<div class="work_right">
- 							<h3 class="work__title work__title_max-width">Freelance photographer
+ 						<h2 class="subtitle">Work experience</h2>
+ 						<div class="row">
+ 							<div class="colum"> 	
+ 								<h3 class="work__title">Postent, event photographer assistant
+ 									Paris, France
+ 								</h3>
+ 								<span class="work__date">2012-2013</span>				
+ 							</div> 							
+ 							<div class="colum colum_right">
+ 								<h3 class="work__title">Freelance photographer<br/>
  								Self-employed
  							</h3>
  							<span class="work__date">2017-2019</span>
+ 							</div>
+ 						</div>
+ 						<div class="row">
+ 							<div class="colum">
+ 								<h3 class="work__title work__title_top">Photof, art director<br/>
+ 								Florence, Italy
+ 							</h3>
+ 							<span class="work__date">2013-2017</span>
+ 							</div>
  						</div>
  					</div>
  				</div>
  			</section>
 
  			<section class="latest">
- 				<div class="subtitle_center">
- 					<h2 class="subtitle">my latest works</h2>
- 					<span class="subtitle__projects">Projects i&rsquo;ve been working&nbsp;on.</span>
- 					<ul class="list">
- 						<li class="portfolioItem">
- 							<img class="portfolioItem__img" src="images/work1.jpg"
- 							srcset="images/work1@2x.jpg 2x">
- 							<div class="portfolioItemText">
- 								<h3 class="portfolioItemText__name">Waterfall</h3>
- 								<a class="portfolioItemText__link" href="">View the project</a>
- 							</div >
- 						</li>
- 						<li class="portfolioItem">
- 							<img class="portfolioItem__img" src="images/work2.jpg" 
- 							srcset="images/work2@2x.jpg 2x">
- 							<div class="portfolioItemText">
- 								<h3 class="portfolioItemText__name">New york night</h3>
- 								<a class="portfolioItemText__link" href="">View the project</a>
- 							</div >
- 						</li>
- 						<li class="portfolioItem">
- 							<img  class="portfolioItem__img" src="images/work3.jpg"
- 							srcset="images/work3@2x.jpg 2x">
- 							<div class="portfolioItemText">
- 								<h3 class="portfolioItemText__name">Portrait</h3>
- 								<a class="portfolioItemText__link" href="">View the project</a>
- 							</div >
- 						</li>
- 					</ul>
- 				</div>
+ 				<h2 class="subtitle">my latest works</h2>
+ 				<span class="subtitle__projects">Projects i&rsquo;ve been working&nbsp;on.</span>
+ 				<ul class="latest__list">
+ 					<li class="latest__item">
+ 						<img class="latest__img" src="images/work1.jpg"
+ 						srcset="images/work1@2x.jpg 2x">
+ 						<div class="portfolioItemText">
+ 							<h3 class="portfolioItemText__name">Waterfall</h3>
+ 							<a class="portfolioItemText__link" href="">View the project</a>
+ 						</div >
+ 					</li>
+ 					<li class="latest__item">
+ 						<img class="latest__img" src="images/work2.jpg" 
+ 						srcset="images/work2@2x.jpg 2x">
+ 						<div class="portfolioItemText">
+ 							<h3 class="portfolioItemText__name">New york night</h3>
+ 							<a class="portfolioItemText__link" href="">View the project</a>
+ 						</div >
+ 					</li>
+ 					<li class="latest__item">
+ 						<img  class="latest__img" src="images/work3.jpg"
+ 						srcset="images/work3@2x.jpg 2x">
+ 						<div class="portfolioItemText">
+ 							<h3 class="portfolioItemText__name">Portrait</h3>
+ 							<a class="portfolioItemText__link" href="">View the project</a>
+ 						</div >
+ 					</li>
+ 				</ul>
  			</section>
 
  			<section>
