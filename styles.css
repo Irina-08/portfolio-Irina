@@ -377,9 +377,11 @@
     padding: 3px 16px 3px 25px;
 }
 
+
 .header__button_background::after{
 	content: '\2192';
 	height: 30px;
 	width: 30px;
 	display: inline-block;
 }
+
