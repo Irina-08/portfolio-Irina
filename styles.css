@@ -36,15 +36,6 @@
 	margin: 3px 0 0 9px;
 }
 
-.subtitle__projects{
-	font-size: 12px;
-	color: rgba(0, 0, 0, 0.6);
-	font-weight: 600;
-	line-height: 1.5;
-	letter-spacing: 0.4px;
-}
-
-
 .header{
 	background-image: url(images/header.jpg);
 	height: 714px;
@@ -279,6 +270,14 @@
 .latest__img{
 	width: 364px;
 	height: 234px;
+}
+
+.latest__projects{
+	font-size: 12px;
+	color: rgba(0, 0, 0, 0.6);
+	font-weight: 600;
+	line-height: 1.5;
+	letter-spacing: 0.4px;
 }
 
 .portfolioItemText{

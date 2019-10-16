@@ -15,7 +15,7 @@ function checkForm(element){
 }
 function validate(event) {
 	event.preventDefault();
-	var elementsForm = document.getElementsByClassName("form__required");
+	var elementsForm = document.getElementsByClassName("form__input_required");
 
 	var correctElements=0;
 	for (var i = 0; i<elementsForm.length; i++) {
