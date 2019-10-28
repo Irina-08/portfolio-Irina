@@ -7,18 +7,49 @@
 	}
 }
 
-.transform{
-	animation: myAnimation 10s infinite;
-}
-
-
 .container{
 	max-width: 1200px;
 	margin: 0 auto;
 	font-family: 'Poppins' , sans-serif;
 }
 
-.title{
+.subtitle{
+	font-size: 20px;
+	text-transform: uppercase;
+	line-height: 0.9;
+	letter-spacing: 2.8px; 
+	font-weight: 600;
+	margin: 0;
+}
+
+.subtitle_about{
+	margin: 49px 0 0 38px;
+	display: flex;
+}
+
+.subtitle__text{
+	font-size: 12px;
+	text-transform: lowercase;
+	font-weight: 600;
+	line-height: 1.5;
+	letter-spacing: 0.47px;
+	margin: 3px 0 0 9px;
+}
+
+.header{
+	background-image: url(images/header.jpg);
+	height: 714px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+}
+
+.header__container{
+	display: flex;
+	justify-content: space-between;
+}
+
+.header__title{
 	font-size: 20px;
 	text-transform: uppercase;
 	line-height: 1.1;
@@ -27,7 +58,7 @@
 	margin:25px 0 0 35px;
 }
 
-.links{
+.header__nav{
 	font-size: 12px;
 	display: flex;
 	justify-content: space-between;
@@ -41,37 +72,18 @@
 	margin: 31px 40px 0 0 ;
 }
 
-.link{
+.header__nav_text-decoration{
 	text-decoration: none;
 	color: #000000;
 }
 
-.header-container{
-	display: flex;
-	justify-content: space-between;
-}
-
-.subtitle{
-	font-size: 20px;
-	text-transform: uppercase;
-	line-height: 0.9;
-	letter-spacing: 2.8px; 
-	font-weight: 600;
-	margin: 0;
-	
-}
-
-
-
-.header-name{
+.header__name{
 	position: absolute;	
 	top: 243px;
 	left: 34px;
 }
 
-
-
-.paragraph-1{
+.header__text{
 	font-size: 12px;
 	margin:32px 0 0 0px;
 	line-height: 1.5;
@@ -79,12 +91,8 @@
 	max-width: 400px;
 }
 
-.buttons{
-	margin: 5px 0 0 0;
-}
-
-.button{
-	margin: 56px 0 0 0;	
+.header__button{
+	margin: 62px 0 0 0;	
 	font-size: 12px;
 	color: #ffffff;
 	padding: 4px 36px 4px 36px;; 
@@ -98,104 +106,66 @@
 	letter-spacing: 3.9px;
 }
 
-.button:hover{
+.header__button:hover{
 	cursor: pointer;
 	background: #ffffff;
 	color: #6a4a4c;
 	transition: 2s;
 }
 
-.button-view{
+.header__button_left{
 	margin: 0 0 0 12px;
 }
 
-.header{
-	background-image: url(images/header.jpg);
-	height: 714px;
-	background-repeat: no-repeat;
-	background-size: cover;
-	position: relative;
+.header__button_background{
+	background: #000000;
+    justify-content: center;
+    margin: 4px 0px 50px 36px;
+    border: 2px solid #000000;
+    padding: 3px 16px 3px 25px;
 }
 
-.about-img{
-	width: 308px;
-	height: 340px;
-	margin: 41px 0 0 35px;
-}
-
-.subtitle2{
-	margin: 49px 0 0 35px;
-	display: flex;
+.header__button_background::after{
+	content: '\2192';
+	height: 30px;
+	width: 30px;
+	display: inline-block;
 }
 
 .about{
 	display: flex;
 }
 
-.subtitle-text{
-	font-size: 12px;
-	text-transform: lowercase;
-	font-weight: 600;
-	line-height: 1.5;
-	letter-spacing: 0.47px;
-	margin: 3px 0 0 9px;
+.imgPortfolio__img{
+	width: 308px;
+	height: 340px;
+	margin: 41px 0 0 35px;
 }
 
-.about-paragraph{
+.imgPortfolio__img_animation{
+	animation: myAnimation 10s infinite;
+}
+
+.introduction{
 	display: flex;
+	margin: 45px 0 0 59px;
 }
 
-.about-all{
-	margin: 43px 0 0 56px;
+.introduction__text{
+	font-size: 12px;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.7);
+    line-height: 1.54;
+    letter-spacing: 0.5px;
+    margin: 20px 0 0 0px;
+    max-width: 345px;
 }
 
-.about-button{
+.introduction__right{
 	margin: 22px 0 0 82px;
 }
 
-.about-subtitle{
-	max-width: 345px;
-}
-
-.about-p{
-	font-size: 12px;
-	font-weight: 600;
-	color: rgba(0, 0, 0, 0.7);
-	line-height: 1.54;
-	letter-spacing: 0.5px;
-	margin: 23px 0 0 0;
-}
-
-.about-p1{
-	margin: 20px 0px 0px -5px;
-	max-width: 345px;
-}
-
-.work-year{
-	display: flex;
-	margin: 82px 0 0 0;
-}
-
-.subtitle-h3{
-	font-size: 12px;
-	line-height: 1.5;
-	letter-spacing: 0.48px;
-	margin: 24px 0 3px 0;
-	max-width: 253px;
-}
-/*не есть хорошо для каждого свой класс. нужно стараться избегать. 
-Пока не поняла как обойтись без них, что бы тест был в точности как на макете*/
-.subtitle-h3-2{
-	margin: 22px 0 0 0;
-	max-width: 125px;
-}
-
-.subtitle-h3-3{
-	margin: 18px 0 0 0;
-	max-width: 187px;
-}
-
-.button-download {
+.introduction__link {
 	font-size: 12px;
 	color: #000000;
 	font-weight: 600;
@@ -208,7 +178,7 @@
 	position: relative;
 }
 
-.button-download::before{
+.introduction__link::before{
 	content: url(images/download.jpg);
 	background-size: 21px;
 	display: inline-block;
@@ -217,39 +187,51 @@
 	left: -3px;
 }
 
-.link-img::after{
-	content: '\2192';
-	height: 30px;
-	width: 30px;
-	display: inline-block;
-	margin: 0 0 0px 17px;
-}
-/* не удалось сделать их в одном*/
-
-.send::after{
-	content: '\2192';
-	height: 30px;
-	width: 30px;
-	display: inline-block;
+.work{
+	margin: 85px 0 0 57px;
 }
 
-.year{
+.work__title{
+	font-size: 12px;
+	line-height: 1.5;
+	letter-spacing: 0.48px;
+	margin: 24px 0 3px 0;
+	max-width: 253px;
+}
+
+.work__title_top{
+	margin: 22px 0 0 0;
+	max-width: 125px;
+}
+
+.work__date{
 	font-size: 12px;
 	font-weight: 300;
 	line-height: 1.54;
 	letter-spacing: 0.8px;
 }
 
-.freelance{
-	margin: 25px 0 0 170px;
+.row{
+	display: flex;
 }
 
-.title-works{
+.colum{
+	flex: 50%;
+}
+
+.colum_right{
+	flex: 40%;
+}
+
+.latest{
+	background-color: #d1bac8;
+	margin: 56px 0 0 0;
+	padding: 54px 0 0px 3px;
 	text-align: center;
 	line-height: 2.8;
 }
 
-.works-img{
+.latest__list{
 	display: flex;
 	list-style: none;
 	justify-content: space-around;
@@ -259,15 +241,15 @@
 	max-width: 1150px;
 }
 
-.portfolio-item{
+.latest__item{
 	position: relative;
 }
 
-.portfolio-item:hover{
+.latest__item:hover{
 	cursor: pointer;
 }
 
-.portfolio-item::before{
+.latest__item::before{
 	content: '';
 	background: rgba(255, 255, 255, 0.5);
 	width: 100%;
@@ -277,12 +259,28 @@
 	transition: all 2s;
 }
 
-.portfolio-item:hover::before{
+.latest__item:hover::before{
 	opacity: 1;
-
 }
 
-.portfolio-item-text{
+.latest__item:hover .portfolioItemText{
+	opacity: 1;
+}
+
+.latest__img{
+	width: 364px;
+	height: 234px;
+}
+
+.latest__projects{
+	font-size: 12px;
+	color: rgba(0, 0, 0, 0.6);
+	font-weight: 600;
+	line-height: 1.5;
+	letter-spacing: 0.4px;
+}
+
+.portfolioItemText{
 	position: absolute;
     bottom: 0;
     width: 100%;
@@ -293,30 +291,7 @@
     box-sizing: border-box;
 }
 
-.portfolio-item:hover .portfolio-item-text{
-	opacity: 1;
-}
-
-.subtitle-text-3{
-	font-size: 12px;
-	color: rgba(0, 0, 0, 0.6);
-	font-weight: 600;
-	line-height: 1.5;
-	letter-spacing: 0.4px;
-}
-
-.work-img{
-	width: 364px;
-	height: 234px;
-}
-
-.latest{
-	background-color: #d1bac8;
-	margin: 56px 0 0 0;
-	padding: 54px 0 0px 3px;
-}
-
-.name-work{
+.portfolioItemText__name{
 	font-size: 20px;
 	line-height: 1.2;
 	letter-spacing: 3px;
@@ -324,7 +299,7 @@
 	margin: 0px 0 0 0;
 }
 
-.link-img{
+.portfolioItemText__link{
 	font-size: 12px;
 	font-weight: 600;
 	line-height: 1.1;
@@ -333,7 +308,43 @@
 	color: #000000;
 }
 
-.input, .textarea{
+.portfolioItemText__link::after{
+	content: '\2192';
+	height: 30px;
+	width: 30px;
+	display: inline-block;
+	margin: 0 0 0px 17px;
+}
+
+.feedbackForm{
+	font-size: 12px;
+	font-weight: 600;
+	line-height: 1.5;
+	letter-spacing: 0.5px;
+	color: rgba(0, 0, 0, 0.6);
+	text-align: center;
+	margin: 35px 0 0 0;
+}
+
+.feedbackForm__button{
+	text-align: center;
+}
+
+.pop-upWindow{
+	text-align: center;
+	font-size: 20px;
+	background: #ffffff;
+	color: #6a4a4c;
+	margin: 52px 0 0 0;
+}
+
+.form{
+	display: flex;
+	justify-content: space-between;
+	margin: 70px 200px 20px 234px;
+}
+
+.form__input, .form__textarea{
 	display: block;
 	text-transform: uppercase;
 	font-size: 12px;
@@ -345,53 +356,9 @@
 	border-bottom: 5px solid rgba(0, 0, 0, 0.6);
 	width: 360px;
 	outline: none;
-
 }
 
-.textarea{
+.form__textarea{
 	padding-bottom: 104px;
 	margin: -3px 0 0 0;
-
-}
-
-.inputs{
-	display: flex;
-	justify-content: space-between;
-	margin: 70px 200px 20px 234px;
-	
-
-}
-
-.drop{
-	font-size: 12px;
-	font-weight: 600;
-	line-height: 1.5;
-	letter-spacing: 0.5px;
-	color: rgba(0, 0, 0, 0.6);
-	text-align: center;
-	margin: 35px 0 0 0;
-}
-
-.send1{
-	text-align: center;
-}
-
-.send{
-	background: #000000;
-    justify-content: center;
-    margin: 4px 0px 50px 36px;
-    border: 2px solid #000000;
-    padding: 3px 16px 3px 25px;
-}
-
-.result{
-text-align: center;
-margin-top: -200px;
-}
-
-.thanks{
-	text-align: center;
-	font-size: 20px;
-
-	color: #6a4a4c;
 }
